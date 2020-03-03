@@ -18,7 +18,7 @@ if (process.env.NODE_ENV === 'development') {
 
 app.use('/api/v1/transactions', require('./routes/transactions'));
 
-if (process.env.NODE_ENV === 'development') {
+if (process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'));
 
   const path = require('path');
