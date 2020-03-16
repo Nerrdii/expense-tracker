@@ -1,5 +1,5 @@
 {
-  "name": "expense-tracker-mern",
+  "name": "expense-tracker",
   "version": "1.0.0",
   "description": "Expense tracker built with the MERN stack",
   "main": "index.js",
