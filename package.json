@@ -7,7 +7,7 @@
     "start": "node index.js",
     "server": "nodemon index.js",
     "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "dev": "concurrently -c green,blue -n server,client \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "keywords": [],
@@ -17,11 +17,11 @@
     "colors": "^1.4.0",
     "dotenv": "^16.0.3",
     "express": "^4.17.1",
-    "mongoose": "^6.7.2",
+    "mongoose": "^7.5.0",
     "morgan": "^1.9.1"
   },
   "devDependencies": {
-    "concurrently": "^7.5.0",
+    "concurrently": "^8.2.1",
     "nodemon": "^3.0.1"
   }
 }
